@@ -155,7 +155,8 @@ function algoDijkstra(map,D::Tuple{Int64,Int64},A::Tuple{Int64,Int64}) #main fun
     visited[D[1],D[2]]=true
     prio=PriorityQueue{Tuple{Int64,Int64},Int64}() #create an empty priotyqueue
     prio[(D[1],D[2])]=0 #adds the start state to the queue with priority 0
-    pred::Matrix{Tuple{Int64,Int64}}=fill((1,1),height,width)
+    pred::Matrix{Tuple{Int64,Int64}}=fill((0,0),height,width)
+    pred[D[1],D[2]]=D
 
     println("Distance D → A  : ",Dijkstra(map,height,width,visited,dist,prio,pred,A))
     println("Number of states evaluated: ",dist[A[1],A[2]])
