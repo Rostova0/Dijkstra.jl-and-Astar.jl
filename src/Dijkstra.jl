@@ -5,7 +5,7 @@ using Colors
 using Gtk
 
 function toMatrix(namefile)
-    open("./"*namefile,"r") do file
+    open("../street-map/$namefile","r") do file
 
         readline(file)
         
