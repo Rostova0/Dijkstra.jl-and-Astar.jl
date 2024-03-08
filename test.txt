@@ -1,7 +1,0 @@
-<<<<<<< HEAD
-Salut
-LE GROS CACA
-bravo la maturité
-=======
-Salu
->>>>>>> 09577bb (wesh)
